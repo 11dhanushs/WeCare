@@ -16,7 +16,7 @@ public class MySQLJDBCUtil {
     // db parameters
     String url       = "jdbc:mysql://localhost:3306/userdetails";
     String user      = "root";
-    String password  = "zjCYg5@1";
+    String password  = "12345678";
     conn = DriverManager.getConnection(url, user, password);	
     } 
     catch(SQLException e) {

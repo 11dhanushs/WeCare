@@ -128,19 +128,11 @@ public class newRecord implements Initializable {
     private void nextButtonClicked(MouseEvent event) throws SQLException, IOException {
         String medID = medicalID.getText();
         String lastname = lName.getText().toLowerCase();
-        String url       = "jdbc:mysql://localhost:3306/UserDetails";
-        String user      = "root";
-        String pass  = "zjCYg5@1";
+        Connection conn = MySQLJDBCUtil.getConnection();
+        Statement stmt  = conn.createStatement();
         String dob = "";
         String fname = "";
         String bg;
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection(url,user,pass);
-        } catch (SQLException ex) {
-            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Statement stmt  = conn.createStatement();
         String sql = "SELECT * from user where medId =\""+medID+"\" and lname=\""+lastname+"\"";
         ResultSet rs    = stmt.executeQuery(sql);
         if(rs.next()){
