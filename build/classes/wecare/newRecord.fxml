@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wecare.newRecord">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="709.0" style="-fx-background-color: #c3edea;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="invalidUserLabel" layoutX="293.0" layoutY="232.0" prefHeight="30.0" prefWidth="113.0" textFill="RED">
+                     <font>
+                        <Font name="Times Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="215.0" layoutY="142.0" prefHeight="26.0" prefWidth="67.0" text="Medical ID:" />
+                  <TextField fx:id="medicalID" layoutX="369.0" layoutY="141.0" />
+                  <Label alignment="CENTER" layoutX="215.0" layoutY="197.0" prefHeight="26.0" prefWidth="67.0" text="Last Name:" />
+                  <TextField fx:id="lName" layoutX="369.0" layoutY="197.0" />
+                  <Button layoutX="293.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#newBirthRecordButton" style="-fx-background-color: #222831;" text="New Birth Record" textFill="#f4f6ff" />
+                  <Label layoutX="330.0" layoutY="81.0" text="UPDATE" />
+                  <Button layoutX="293.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#nextButtonClicked" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #222831;" text="Next" textFill="#f4f6ff" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="40.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="110.0" />
+                  <Button fx:id="newButton" mnemonicParsing="false" onMouseClicked="#newButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #c3edea;" styleClass="menuButton" stylesheets="@medofficer.css" text="New">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="searchButton" layoutX="120.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Search">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="accountButton" layoutX="225.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#accountButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Account">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="330.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#logoutButtonClicked" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Logout">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

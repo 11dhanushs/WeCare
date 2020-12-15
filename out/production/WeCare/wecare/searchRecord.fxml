@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wecare.searchRecord">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox prefHeight="40.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="110.0" />
+                  <Button fx:id="newButton" mnemonicParsing="false" onMouseClicked="#newButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="New">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="searchButton" layoutX="120.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #c3edea;" styleClass="menuButton" stylesheets="@medofficer.css" text="Search">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="accountButton" layoutX="225.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#accountButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Account">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="330.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#logoutButtonClicked" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Logout">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="709.0" style="-fx-background-color: #c3edea;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="245.0" layoutY="120.0" prefHeight="26.0" prefWidth="67.0" text="Medical ID:" />
+                  <TextField fx:id="medicalIDSearch" layoutX="374.0" layoutY="119.0" />
+                  <TextField fx:id="lNameSearch" layoutX="374.0" layoutY="178.0" />
+                  <Label alignment="CENTER" layoutX="245.0" layoutY="178.0" prefHeight="26.0" prefWidth="67.0" text="Last Name:" />
+                  <Label layoutX="330.0" layoutY="64.0" text="SEARCH" />
+                  <Label fx:id="invalidUserLabelSearch" alignment="CENTER" layoutX="298.0" layoutY="217.0" prefHeight="30.0" prefWidth="113.0" textFill="RED">
+                     <font>
+                        <Font name="Times Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="299.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#searchNextButton" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #222831;" text="Search" textFill="#f4f6ff" />
+               </children></AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

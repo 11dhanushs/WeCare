@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.textField:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color:rgba(255,0,0,0.2);
+}
+.textField{
+   
+}

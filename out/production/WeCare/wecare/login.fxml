@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wecare.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #00a8cc; -fx-alignment: center;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2cd05c2f-5e30-4129-b557-c217efb06b51.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font name="Serif Regular" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="40.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2cd05c2f-5e30-4129-b557-c217efb06b51.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="email" layoutX="62.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" text="Login to Continue" textFill="#16817a">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="TextField_email" layoutX="60.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#validateEmail" prefHeight="40.0" prefWidth="280.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #1b262c;" styleClass="textfielld" stylesheets="@login.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="TextField_password" layoutX="60.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="280.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #1b262c; -fx-border-width: 0px 0px 2px 0px;" styleClass="textfield" stylesheets="@login.css" />
+            <Button layoutX="150.0" layoutY="438.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#loginbtn" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #00a8cc;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/PasswordIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="invaliEmailLabel" layoutX="150.0" layoutY="393.0" prefHeight="30.0" prefWidth="113.0" textFill="RED">
+               <font>
+                  <Font name="Times Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="exitLabel" alignment="CENTER" layoutX="333.0" layoutY="9.0" onMouseClicked="#exitLabelClicked" prefHeight="30.0" prefWidth="44.0" text="X" textFill="RED">
+               <font>
+                  <Font name="Wingdings 2" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+.menuButton:hover{
+    -fx-border-color:#99ffcc;
+    -fx-border-width:0px 0px 3px 0px;
+}
+.menuButton:pressed{
+   -fx-background-color:#6886c5;
+}
+

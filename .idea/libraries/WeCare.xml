@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WeCare">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/WeCare.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wecare.NewBirthRecordController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="709.0" style="-fx-background-color: #c3edea;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="invalidUserLabel" layoutX="293.0" layoutY="232.0" prefHeight="30.0" prefWidth="113.0" textFill="RED">
+                     <font>
+                        <Font name="Times Roman" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="182.0" layoutY="55.0" prefHeight="26.0" prefWidth="67.0" text="Medical ID:" />
+                  <TextField fx:id="medicalID" editable="false" layoutX="289.0" layoutY="55.0" />
+                  <Label alignment="CENTER" layoutX="182.0" layoutY="109.0" prefHeight="26.0" prefWidth="67.0" text="First Name:" />
+                  <TextField fx:id="fnameUser" layoutX="289.0" layoutY="109.0" />
+                  <Label layoutX="325.0" layoutY="14.0" text="UPDATE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="299.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#submitButton" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #222831;" text="Submit" textFill="#f4f6ff" />
+                  <Label alignment="CENTER" layoutX="182.0" layoutY="165.0" prefHeight="26.0" prefWidth="67.0" text="Last Name:" />
+                  <TextField fx:id="lnameUser" layoutX="289.0" layoutY="164.0" />
+                  <DatePicker fx:id="dobUser" layoutX="285.0" layoutY="219.0" />
+                  <Label alignment="CENTER" layoutX="168.0" layoutY="219.0" prefHeight="26.0" prefWidth="95.0" text="Date Of Birth:" />
+                  <Label alignment="CENTER" layoutX="168.0" layoutY="272.0" prefHeight="26.0" prefWidth="95.0" text="Blood Group:" />
+                  <ComboBox fx:id="bloodGroupUser" layoutX="285.0" layoutY="272.0" prefHeight="27.0" prefWidth="161.0" />
+                  <Label fx:id="fNameError" layoutX="510.0" layoutY="108.0" prefHeight="30.0" prefWidth="95.0" textFill="RED" />
+                  <Label fx:id="lNamError" layoutX="510.0" layoutY="163.0" prefHeight="30.0" prefWidth="95.0" textFill="RED" />
+                  <Label fx:id="dobError" layoutX="510.0" layoutY="219.0" prefHeight="30.0" prefWidth="95.0" textFill="RED" />
+                  <Label fx:id="bloodGroupError" layoutX="510.0" layoutY="272.0" prefHeight="30.0" prefWidth="95.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="40.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: #f7f7f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="110.0" />
+                  <Button fx:id="newButton" mnemonicParsing="false" onMouseClicked="#newButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #c3edea;" styleClass="menuButton" stylesheets="@medofficer.css" text="New">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="searchButton" layoutX="120.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Search">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="accountButton" layoutX="225.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#accountButtonClicked" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Account">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="330.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#logoutButtonClicked" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #f7f7f7;" styleClass="menuButton" stylesheets="@medofficer.css" text="Logout">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>
